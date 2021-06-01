@@ -1,0 +1,60 @@
+Using diff/FC :
+**************
+to check the  difference between two versions of a code enables the developer to pin-point the exact cause for a bug rather spending humongous amout of time searching for a needle in a hay stack!
+
+Using History for Efficiency:
+*****************************
+Having a well described and annotated versions of the file significantly improvres coding effciency.
+Useful features which were once developed and later discarded can be retrieved easily without having to put in the entire effort to re-create the same.
+Also, minor bugs creeping in on a previously working code can be corrected by a quick comparison between a previous and a current version of the code.
+
+*************************************************************************************************************************************************************
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pros:
+1. Clear logical separation between each commit
+2. Commit history makes sense, helps in documening the code changes
+
+Cons:
+1. Lazy programmer can go too long without commits
+2. Commits can become too large and cluttered 
+
+*************************************************************************************************************************************************************
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Basically, Git is designed to work with a code snippets and scripts which generally involve multiple files that are used together to get an output. Hence it is likely that any change in one file may call for modifications in some other related files as well. Genrally all these associated files are grouped together in a Project or so..
+
+Whereas, Googl Docs is deigned to work on documents or files that are generally self contained. Any changes made to the doxument is less likely to call for a change in other document. Hence only one file needs to be tracked.
+
+*************************************************************************************************************************************************************
+How can you use the commands git log and git diff to view the history of files?
+
+* cd into git repo
+* >>git log : Gives history of all commits
+Includes :  Commit ID, Author, Description, Time
+
+* Latest commit sows up on top
+
+*Commit description can be used to identify the required commit.
+
+* The changes made w.r.t any other commit is found by using 
+* >> git diff first four char of commit ID 1 and Commit ID 2
+
+* >> git diff b04a f19c
+
+* Green : Lines added
+* Red   : Lines deleted
+* Black : Lines unchanged
+
+*************************************************************************************************************************************************************
+How might using version control make you more confident to make changes that could break something?
+
+By using version control, all versions of the code is still available and upon the discovery of a bug, we can very well checkout a previous version to detect which commit introduced the bug. Further, by using git diff the diffrence between the first commit with the bug and the commit bfore that can be obtained. A closer inspection of this diff would narrow down the search for the bug introducing code change significantly.
+
+*************************************************************************************************************************************************************
+How Do You Want to Use Git?
+
+1. To organise and arrange my work in repositories.
+2. To have efficient version cotrol and history tracking of the code
+
+*************************************************************************************************************************************************************
