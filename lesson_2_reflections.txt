@@ -49,6 +49,14 @@ When two branches are merged together, the checked out branch gets updated with 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 
+Automatic Merging: 
+Pros:
+ - Time saving : Saves the trouble of looking through each line when it is obvious
+
+Cons: 
+ - In case of Merge Conflicts the final informed decision should be made by the author which will ensure that only meaningful code changes are retained
+ and the resulting code still compiles/runs
+
 *************************************************************************************************************************************************************
 git diff forms:
 
